@@ -11,10 +11,14 @@ const Menu = () => {
     <div className={styles.menu} >
       <div>
         <div className={styles['menu__logo']} >
-          {SVG.EVER_BOARD_LOGO}
-          <span className={styles['menu__logo-text']}>
-            project subheading
-          </span>
+          <NavLink
+            to={'/'}
+          >
+            {SVG.EVER_BOARD_LOGO}
+            <span className={styles['menu__logo-text']}>
+              project subheading
+            </span>
+          </NavLink>
         </div>
         {menu.map((item) => (
           <NavLink
