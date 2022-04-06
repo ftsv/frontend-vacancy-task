@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   padding: 0;
+  width: 100%;
   background: $neutral-page;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.04);
   border: 2px solid $primary;
@@ -22,12 +23,12 @@
 
   &__data {
     display: flex;
-    box-sizing: content-box;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     margin: 8px;
-    padding: 0;
+    padding: 0 16px;
   }
 
   &-index {
@@ -166,7 +167,8 @@
 
     &__text {
       display: flex;
-      align-items: center;
+      flex-direction: column;
+      padding: 16px 24px;
       @extend %tpl-font-basic;
       color: $gray;
       font-weight: 500;

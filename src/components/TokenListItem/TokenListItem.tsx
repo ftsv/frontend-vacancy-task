@@ -85,9 +85,7 @@ const TokenListItem: React.FC<TokenListItemProps> = (props) => {
       <div className={cn(styles['token-description__text'], {
         [`${styles.hidden}`]: isHidden,
       })}>
-        <span>
           {token.description}
-        </span>
       </div>
     </div>
   )
