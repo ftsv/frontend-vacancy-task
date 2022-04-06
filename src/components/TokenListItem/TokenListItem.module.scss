@@ -80,13 +80,15 @@
       &>li:not(:first-child) {
         display: flex;
         align-items: center;
-        padding-left: 17px;
+        padding-left: 16px;
         &::before {
-          position: absolute;
+          // position: absolute;
           display: flex;
-          align-items: center;
+          width: 12px;
+          align-self: center;
+          justify-self: center;
           font-weight: 500;
-          margin-left: -11px;
+          margin-left: -8px;
           content: '\2022';
           color: $neutral
         }
