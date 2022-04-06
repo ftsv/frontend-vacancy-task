@@ -1,0 +1,33 @@
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$black: #000000;
+$gray: #5D5E6C;
+$green: #30BF8C;
+$neutral: #93949D;
+$neutral-page: #F7F7FB;
+$primary: #6347F5;
+$primary-dark: #B380FD;
+$red: #FF647C;
+$white: #FFFFFF;
+
+%tpl-font-basic {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+}
+
+%tpl-font-sm {
+  @extend %tpl-font-basic;
+  font-size: 14px;
+}
+
+%tpl-font-md {
+  @extend %tpl-font-basic;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+%tpl-font-bg {
+  @extend %tpl-font-basic;
+  font-size: 36px;
+}

@@ -1,0 +1,87 @@
+@import './global.scss';
+
+body {
+  margin: 0;
+  padding: 0;
+  @extend %tpl-font-basic;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+.page {
+  &-header {
+    position: sticky;
+    top: 0vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 6vh 0;
+    background-color: $neutral-page;
+  
+    &-text {
+      display: flex;
+      flex-direction: row;
+      @extend %tpl-font-bg;
+      font-weight: 500;
+      line-height: 120%;
+    }
+  
+    &-filter {
+      display: flex;
+      flex-direction: row;
+      margin: 0;
+      padding: 0;
+      gap: 4px;
+      box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.04);
+      border-radius: 24px;
+      list-style: none;
+  
+      &__item {
+        @extend %tpl-font-sm;
+        padding: 8px;
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.07);
+        border-radius: 16px;
+        
+        &:hover {
+          cursor: pointer;
+        }
+        
+        &--active {
+          cursor: text;
+          background: linear-gradient(225.23deg, $primary-dark 0%, $primary 67.91%);
+          color: $neutral-page;
+        }
+      }
+    }
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &-no-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    @extend %tpl-font-md;
+    color: $black;
+  }
+}
+

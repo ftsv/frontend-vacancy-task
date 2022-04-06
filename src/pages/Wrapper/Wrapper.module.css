@@ -1,0 +1,1 @@
+.wrapper{display:flex;background:linear-gradient(200deg, #B380FD 12%, #6347F5 78%);height:100vh;width:100vw}.menu{transition:all .5s ease;display:flex;flex-direction:column;padding:3vh 3vw;width:320px}.menu--hide{transform:translateX(-320px)}.outlet{z-index:1;overflow:hidden;overflow-y:scroll;width:100%;padding:0 6vw;border-radius:32px 0px 0px 0px;background-color:#f7f7fb}

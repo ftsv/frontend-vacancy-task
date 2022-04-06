@@ -180,7 +180,7 @@ export const tokens = [
     chainId: 1,
     symbol: 'COLA',
     decimals: 9,
-    address: '0:9dd2cd82cbfd74a963be1ef1fd1a1f3e25f60e0b8c742f8b862df378b9a5e265',
+    address: '0:9dd2c4546zd82cbfd74a963be1ef1fd1a1f3e25f60e0b8c742f8b862df378b9a5e265',
     logoURI:
       'https://raw.githubusercontent.com/broxus/ton-assets/master/icons/COLA/logo.svg',
     categories: ['defi', 'dex', 'games', 'wallets'],
