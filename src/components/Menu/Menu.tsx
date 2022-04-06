@@ -10,16 +10,17 @@ const Menu = () => {
   return (
     <div className={styles.menu} >
       <div>
-        <div className={styles['menu__logo']} >
+        {/* <div > */}
           <NavLink
-            to={'/'}
+            to={'/tokens'}
+            className={styles['menu__logo']} 
           >
             {SVG.EVER_BOARD_LOGO}
             <span className={styles['menu__logo-text']}>
               project subheading
             </span>
           </NavLink>
-        </div>
+        {/* </div> */}
         {menu.map((item) => (
           <NavLink
             className={({isActive}) => cn(styles['menu-item'], {
