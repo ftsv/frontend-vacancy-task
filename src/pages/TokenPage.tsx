@@ -5,14 +5,18 @@ import { tokens } from '../tokens';
 
 const TokenPage = () => {
   const location = useLocation();
-  const [token, setToken] = React.useState<IToken | null>(null)
+  const [token, setToken] = React.useState<IToken | null>(null);
   
   React.useEffect(() => {
     const tokenAddress = location.pathname.split('/')[2];
     const index = tokens.filter((a) => a.address === tokenAddress)[0];
     setToken((prev) => index ? index : prev);
     
-  }, [location])
+  }, [location]);
+
+  React.useEffect(() => {
+    document.title = token ? `${token.symbol} (EverBoard)` :'EverBoard'
+  }, [token]);
 
   return (
     <>

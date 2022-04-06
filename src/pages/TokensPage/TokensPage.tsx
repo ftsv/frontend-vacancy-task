@@ -6,7 +6,10 @@ import cn from 'classnames';
 
 const TokensPage: React.FC = () => {
   const [category, setCategory] = React.useState(categories[0]);
-  
+
+  React.useEffect(() => {
+    document.title = 'Токены (EverBoard)'
+  }, []);
 
   return (
     <>

@@ -1,6 +1,10 @@
 import React from 'react';
 
 const SearchPage = () => {
+  React.useEffect(() => {
+    document.title = 'Поиск (EverBoard)'
+  }, []);
+
   return (
     <>
       <div className='page-header' >
